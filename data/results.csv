@@ -1,0 +1,6 @@
+Filename,Compression artifacts,Dynamic range,Illumination uniformity,Luminance variance,Luminance skewness,Luminance kurtosis,Luminance mean,Sharpness,Under exposure,Over exposure,x1,y1,x2,y2,x3,y3,x4,y4
+data/example.png,0.908096,6.19066,4.784349,0.014699,1.626095,3.086205,0.33311,-43.0,0.008376,0.0,90,583,963,592,936,1139,90,1121
+tests/data/black_white.png,0.954115,1.014471,127.5,0.24947,1.002513,1.006599,0.519603,-16.0,0.479882,0.519311,302,226,816,231,800,553,302,542
+tests/data/red.png,0.0,0.0,0.0,0.0,0.0,0.0,0.211765,-50.0,0.0,0.0,0,1,2,1,2,1,0,1
+tests/data/test_id.png,0.933253,6.540919,15.711593,0.012211,1.83919,3.96619,0.426259,-29.0,0.000213,0.0,278,72,752,77,738,372,278,362
+tests/data/white.png,0.0,0.0,0.0,0.0,0.0,0.0,1.0,-50.0,0.0,1.0,0,1,2,1,2,1,0,1

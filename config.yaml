@@ -1,0 +1,94 @@
+id_card_corner_detection:
+  model_path: data/models/corner_heatmap_model.pth
+  batch_size: 16
+  min_area: 0.2
+  redetection_padding: 0.05
+
+cropping:
+  clip_corners_mode: linear
+
+normalization:
+  width: 1000
+  height: 628
+  interpolation: 2 # cv2.INTER_CUBIC
+  map_corners_mode: linear
+
+face_masking:
+  min_confidence: 0.2
+  model_path: data/models/yolo11m-seg.pt
+  batch_size: 16
+
+foreground_masking:
+  downsample_divisor: 2
+  lambda_tv: 0.5
+  lambda_s: 0.05
+  max_iters: 5
+  rho: 1.0
+  tol: 0.0001
+  kernel_size: 3
+  iterations: 2
+
+
+
+face_background_masking:
+  max_deviation: 30
+  grow_amount: 10
+
+luminance:
+  rgb_weights: [0.2126, 0.7152, 0.0722]
+
+luminance_histogram:
+  mask_face: true
+  mask_dark_face_background: false
+  mask_foreground: false
+
+luminance_mean:
+  name: "Luminance mean"
+  description: "Mean of the normalized luminance values."
+
+luminance_variance:
+  name: "Luminance variance"
+  description: "Variance of the normalized luminance values."
+
+luminance_skewness:
+  name: "Luminance skewness"
+  description: "Skewness of the normalized luminance values."
+
+luminance_kurtosis:
+  name: "Luminance kurtosis"
+  description: "Kurtosis of the normalized luminance values."
+
+under_exposure:
+  name: "Under exposure"
+  description: "Measure of under exposure in the luminance of the normalized image."
+  threshold: 7
+
+over_exposure:
+  name: "Over exposure"
+  description: "Measure of over exposure in the luminance of the normalized image."
+  threshold: 7
+
+dynamic_range:
+  name: "Dynamic range"
+  description: "Dynamic range of the luminance distribution in the normalized image."
+
+sharpness:
+  name: "Sharpness"
+  description: "Sharpness of the normalized image."
+  tree_path: "data/models/face_sharpness_rtree.xml.gz"
+
+compression_artifacts:
+  name: "Compression artifacts"
+  description: "Level of compression artifacts in the normalized image."
+  model_path: "data/models/ssim_248_model.onnx"
+
+illumination_uniformity:
+  name: "Illumination uniformity"
+  description: "Uniformity of illumination in the normalized image by the standard deviation of the luminance of blocks."
+  mask_face: true
+  mask_dark_face_background: true
+  mask_foreground: true
+  sections_w_count: 4
+  sections_h_count: 3
+  min_unmasked_proportion: 0.40
+  min_section_count_proportion: 0.25

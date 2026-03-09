@@ -1,0 +1,1 @@
+from .corner_detection import IDCardCornerDetection

@@ -1,0 +1,29 @@
+opencv-python
+pillow
+numpy
+pyyaml
+
+# for YOLO object detection
+ultralytics 
+
+# For corner detection
+torch 
+torchvision
+
+# for compression artifact detection
+onnxruntime
+
+# For text masking
+scikit-learn
+scikit-image
+
+# For notebook support
+matplotlib
+notebook
+ipykernel
+networkx
+# pygraphviz
+
+# for run script
+tqdm
+pandas

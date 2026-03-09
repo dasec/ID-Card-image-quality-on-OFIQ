@@ -1,0 +1,7 @@
+__pycache__
+.DS_Store
+.vscode/
+**tmp**
+pad_data.csv
+run.csv
+**edcs**

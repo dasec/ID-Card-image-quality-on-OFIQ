@@ -1,0 +1,33 @@
+name: oidiq
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - opencv
+  - pillow
+  - numpy
+  - pyyaml
+
+# for YOLO object detection
+  - ultralytics 
+# For corner detection
+  - pip:
+    - torch
+    - torchvision
+
+# for compression artifact detection
+  - onnxruntime
+
+# For text masking
+  - scikit-learn
+  - scikit-image
+
+# For notebook support
+  - matplotlib
+  - notebook
+  - ipykernel
+  - networkx
+  - pygraphviz
+
+
