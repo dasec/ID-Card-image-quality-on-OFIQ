@@ -41,6 +41,9 @@ python run.py --i data/test_files.csv --o data/results.csv --batch-size 16
 
 ### Disclaimer
 
-This repository is only for reseach porpuse.
-If you have any questions please message gregor.grote@h-da.de.
-All the datasets used for this analysis should be requested directly from the sources.
+This repository is provided for research purposes only. The code and materials are shared to support academic study and reproducibility.
+
+The datasets used in this analysis are not distributed through this repository. They must be requested directly from their respective original sources and are subject to their individual licenses and usage restrictions.
+
+If you have any questions regarding this repository or the research, please contact: [gregor.grote@h-da.de](mailto:gregor.grote@h-da.de).
+
