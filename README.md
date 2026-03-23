@@ -5,7 +5,7 @@ It contains a preprocessing pipeline and various quality metrics.
 
 For detailed information, please refer to the [usage example](example_usage.ipynb).
 
-This repositor contains the code referenced by the Paper "Image Quality Assessment of Identity Cards Using Measures from Open Face Image Quality"
+This repository contains the code referenced by the Paper "Image Quality Assessment of Identity Cards Using Measures from Open Face Image Quality"
 
 ### Installation
 
@@ -27,7 +27,7 @@ python run.py --i data/test_files.csv --o data/results.csv --batch-size 16
 ### Citation
 
 ```bibtex
-@inproceedings{grote2026iqaiid,
+@inproceedings{grote2026idiqa,
   title     = {Image Quality Assessment of Identity Cards Using Measures from Open Face Image Quality},
   author    = {Grote, Gregor and Tapia, Juan E. and Rathgeb, Christian},
   booktitle = {Proceedings of the International Workshop on Biometrics and Forensics (IWBF)},
