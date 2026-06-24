@@ -27,15 +27,16 @@ python run.py --i data/test_files.csv --o data/results.csv --batch-size 16
 ### Citation
 
 ```bibtex
-@inproceedings{grote2026idiqa,
-  title     = {Image Quality Assessment of Identity Cards Using Measures from Open Face Image Quality},
-  author    = {Grote, Gregor and Tapia, Juan E. and Rathgeb, Christian},
-  booktitle = {Proceedings of the International Workshop on Biometrics and Forensics (IWBF)},
-  year      = {2026},
-  address   = {Darmstadt, Germany},
-  institution = {Darmstadt University of Applied Sciences},
-  doi = {xxx},
-  pages = {xxx}
+@INPROCEEDINGS{11558141,
+  author={Grote, Gregor and Tapia, Juan E. and Rathgeb, Christian},
+  booktitle={2026 14th International Workshop on Biometrics and Forensics (IWBF)}, 
+  title={Image Quality Assessment of Identity Cards Using Measures from Open Face Image Quality}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Printing;Modeling;Faces;Quality assessment;Image quality;Lighting;Biometrics;Algorithms;Pixel;Training;Biometrics;Explainability;OFIQ;Identity Cards;Artificial Intelligence;Quality Assessment},
+  doi={10.1109/IWBF68042.2026.11558141}}
 }
 ```
 
